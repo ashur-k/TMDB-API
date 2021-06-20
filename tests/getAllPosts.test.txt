@@ -14,13 +14,13 @@
 
 // import data from '../data'
 // import getStaticProps from './ApiFunction'
-import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
-import Index from '../pages/index';
+// import '@testing-library/jest-dom';
+// import { render, screen } from '@testing-library/react';
+// import Index from '../pages/index';
 
-describe("Authenticate route", () => {
-    it("should return 405 if the method is not Post", ()=> {})
-})
+// describe("Authenticate route", () => {
+//     it("should return 405 if the method is not Post", ()=> {})
+// })
 
 import MyComponent from "./path/to/MyComponent";
 
@@ -44,11 +44,10 @@ import MyComponent from "./path/to/MyComponent";
 //   });
 // });
 
-describe("Index page", () => {
-    it("should render", () => {
-        render(<Index />);
-        const main = screen.getByRole("main");
-        expect(main).not.toBeInTheDocument();
-    });
-});
-
+// describe("Index page", () => {
+//     it("should render", () => {
+//         render(<Index />);
+//         const main = screen.getByRole("main");
+//         expect(main).not.toBeInTheDocument();
+//     });
+// });

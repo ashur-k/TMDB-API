@@ -1,0 +1,54 @@
+// import {getAllPosts} from "../lib/api";
+
+// describe("check we get all posts from our blog", () => {
+//     test("check if we have any posts"), async() => {
+//         const posts = await getAllPosts([
+//             "title",
+//             "slug",
+//             "date"
+//         ])
+
+//         ExtensionScriptApis(posts.length > 0).toBeTruthy();
+//     };
+// });
+
+// import data from '../data'
+// import getStaticProps from './ApiFunction'
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import Index from '../pages/index';
+
+describe("Authenticate route", () => {
+    it("should return 405 if the method is not Post", ()=> {})
+})
+
+import MyComponent from "./path/to/MyComponent";
+
+// Mock the getContent function which I don't know where it comes from.
+// jest.mock("../someModule.js", () => ({
+//   getContent: () => Promise.reject()
+// }));
+
+// describe("getStaticProps", () => {
+//   it('populates the "alert" prop on getContent failure.', async () => {
+//     // Inject anything you want to test
+//     const props = await getStaticProps.getInitialProps({
+//       query: { first: "whatever" }
+//     });
+
+//     // And make sure it results in what you want.
+//     expect(props).toEqual({
+//       content: [],
+//       alert: "There was an error loading data, please try again."
+//     });
+//   });
+// });
+
+describe("Index page", () => {
+    it("should render", () => {
+        render(<Index />);
+        const main = screen.getByRole("main");
+        expect(main).not.toBeInTheDocument();
+    });
+});
+
